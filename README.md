@@ -1,13 +1,17 @@
 # Usᥱrbot ᥴrᥱᥲto dᥲ @Abrᥲdᥱrᥱ
 
+
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-green.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Made in Python](https://img.shields.io/badge/Made%20in-python-red.svg)](https://www.python.org/)
 
+
+<img src="https://www.linkpicture.com/q/download_59.png" alt="FRIDAY USERBOT">
+
 ## 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗭𝗜𝗢𝗡𝗘
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Installa Con Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### 𝘝𝘢𝘳 𝘖𝘣𝘣𝘭𝘪𝘨𝘢𝘵𝘰𝘳𝘪𝘦
+### 𝑽𝒂𝒓𝒊𝒂𝒃𝒊𝒍𝒊 𝑶𝒃𝒃𝒍𝒊𝒈𝒂𝒕𝒐𝒓𝒊𝒆
 
 - Solo queste due variabili sono obbligatorie:
   - `APP_ID`: Valore da ottenere da <https://my.telegram.org>
@@ -18,4 +22,4 @@
 
 #### 𝗖𝗢𝗡𝗧𝗔𝗧𝗧𝗜:
 
-[![Telegram](https://img.shields.io/badge/Telegram-%20@Abradere-orange.svg)](https://t.me/Abradere)
+<a href="https://t.me/bambineditiktok"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
