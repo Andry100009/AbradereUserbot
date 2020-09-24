@@ -26,15 +26,14 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "per favore controlla in un gruppo ufficiale e riavvia il programma di aggiornamento."
 )
 OFFICIAL_UPSTREAM_REPO = "https://github.com/Andry100009/AbradereUserbot"
-BOT_IS_UP_TO_DATE = "`Aggiornamento in corso.\nGrazie per aver utilizzato il servizio.`"
+BOT_IS_UP_TO_DATE = "⚙️ `Aggiornamento in corso.\n⚙️ Grazie per aver utilizzato il servizio.`"
 NEW_BOT_UP_DATE_FOUND = (
-    "⚙️Nuovo aggiornamento {branch_name}\n"
-    "⚙️modifiche: \n\n{changelog}\n"
-    "⚙️aggiornando  ..."
+    "⚙️ Nuovo aggiornamento {branch_name}\n"
+    "⚙️ aggiornando  ..."
 )
 NEW_UP_DATE_FOUND = (
-    "⚙️Nuovo aggiornamento trovato {branch_name}\n"
-    "⚙️`Aggiornamento ...`"
+    "⚙️ Nuovo aggiornamento trovato\n"
+    "⚙️ `Aggiornamento ...`"
 )
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
@@ -80,7 +79,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit(f"⚙️**Aggiornamento AʙʀᴀᴅᴇʀᴇUsᴇʀʙᴏᴛ...**")
+        await message.edit(f"⚙️ **Aggiornamento AʙʀᴀᴅᴇʀᴇUsᴇʀʙᴏᴛ...**")
         await asyncio.sleep(8)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -148,7 +147,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit('⚙️**Aggiornamento** in corso...\n⚙️Attendi 5 minuti e esegui **`.alive`**')
+    await message.edit('⚙️ **Aggiornamento** in corso...\n⚙️ Attendi 5 minuti e esegui **`.alive`**')
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)

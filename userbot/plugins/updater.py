@@ -29,7 +29,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Errore-No-Username"
 @bot.on(dev_cmd("update ?(.*)", outgoing=True))
 async def updater(upd):
     "Con il comando .update controlli se il bot è aggiornato"
-    await upd.edit('⚙️**Ricerca aggiornati in corso....**')
+    await upd.edit('⚙️ **Ricerca aggiornati in corso....**')
 
     try:
         repo = git.Repo()
@@ -70,7 +70,7 @@ async def updater(upd):
         await upd.delete()
         return
 
-    changelog_str = f'⚙️**Nuovo AGGIORNATO trovato** {DEFAULTUSER}\n\n⚙️**MODIFICHE:**\n {changelog}'
+    changelog_str = f'⚙️ **Nuovo AGGIORNATO trovato** {DEFAULTUSER}\n\n⚙️**MODIFICHE:**\n {changelog}'
     if len(changelog_str) > 4095:
         await upd.edit('**Il changelog delle modifiche è troppo grande,leggi il file.**')
         file = open("change.txt", "w+")
@@ -129,7 +129,7 @@ async def gen_chlog(repo, diff_marker):
     return ch_log
 
 async def deploy_start(bot, upd, refspec, remote):
-    await upd.edit('⚙️**Aggiornamento** in corso...\n⚙️Attendi 5 minuti e esegui **`.alive`**')
+    await upd.edit('⚙️ **Aggiornamento** in corso...\n⚙ ️Attendi 5 minuti e esegui **`.alive`**')
     await remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
