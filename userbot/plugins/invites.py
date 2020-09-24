@@ -1,5 +1,10 @@
-"""Invite the user(s) to the current chat
-Syntax: .invite <User(s)>"""
+# Copyright © 2020 di Abradere Github, <https://github.com/Andry100009>.
+#
+# Questo file fa parte del progetto <https://github.com/Andry100009/AbradereUserbot>,
+# e viene rilasciato in base alla "Licenza GNU Affero General Public v3.0".
+# Si prega di consultare <https://github.com/Andry100009/AbradereUserbot/blob/master/LICENSE>
+#
+# Tutti i diritti riservati a @Abradere.
 
 from telethon import functions
 from userbot.system import dev_cmd
