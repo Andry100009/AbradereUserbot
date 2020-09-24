@@ -14,7 +14,7 @@
     },
     "ALIVE_NAME": {
       "description": "Inserisci la @ del tuo account Telegram",
-      "value": ""
+      "value": "@sborracchia"
     },
     "AUTONAME": {
       "description": "Requisito per il modulo autoprofilo.py imposta un nome che apparirà come nome di telegram.",
@@ -23,29 +23,29 @@
     },
     "APP_ID": {
       "description": "Valori ottenuti da my.telegram.org!",
-      "value": ""
+      "value": "1712864"
     },
     "API_HASH": {
       "description": "Valori ottenuti da my.telegram.org!",
-      "value": ""
+      "value": "3aa87675402268096eeb88be51be7e3c"
     },
     "STRING_SESSION": {
       "description": "Valore ottenuto dal sito o da termux, puoi anche usare telesetup.py",
-      "value": ""
+      "value": "1BJWap1wBuxi8wfwrf69u7fDwOzH8g01XwJFyQLyxcNrjRzb8I96FuLGbHovzOa3gLsinmn4CZydFyxXDhx_5o0AkyxfkiYd0IA2JuLu6NGdA3aa2eZQM-SDV3UO7rupDUZwvJN4GjMO8jU4QXfO8Ix5iwI-ofFdHV5CiI1cTJLbKXY89YORX1aINycP7XNb608q-dIomwvqLvMJeldzQEWfj6sq2KBI4fkjyPnspEVectolGcOq1zwhSzI3udhr0PHhKAgd-HwCr7-xm5YesQx0ol8eTZS-O0kAJ2Edq41ORyij9SnQdEMrGRONGHqGwHjY4mFg6hSNMdCmHVKCfd1vyB-P-rsk="
     },
     "HEROKU_API_KEY": {
       "description": "Vai su https://dashboard.heroku.com/account, vai su API KEY premi Reveal e copiala.",
-      "value": "",
+      "value": "ce22825e-7abf-443d-a883-9aff205cec47",
       "required": false
     },
     "HEROKU_APP_NAME": {
       "description": "Valore uguale al Nome dell'app inserito all'inizio.",
-      "value": "",
+      "value": "abraso",
       "required": false
     },
     "PRIVATE_GROUP_ID": {
       "description": "Crea un gruppo privato e inserisci il ChatId per il log (es:-10012345678).",
-      "value": ""
+      "value": "-494781054"
     },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Massimo numero di messaggi che una persona può inviarti prima di essere bloccata. Valore di default è 3.",
@@ -84,7 +84,7 @@
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Crea un bot con http://t.me/BotFather e inserisci il token personale del tuo bot.",
-      "value": ""
+      "value": "1243127007:AAEgl7IzY_XXKvy5akTqXiwDctHspLCxBTE"
     },
     "CHROME_BIN": {
       "description": "Requisito carbon.py. Non toccare. ",
@@ -98,7 +98,7 @@
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Crea un bot con http://t.me/BotFather e inserisci l'username in http.",
-      "value": ""
+      "value": "http://t.me/AndryUserBot"
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Requisito per autopic.py Url preview link della tua Pic Profilo.",
