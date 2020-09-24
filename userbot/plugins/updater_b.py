@@ -2,12 +2,6 @@
 from os import remove
 from os import execl
 import sys
-# from git import Repo
-# from git.exc import GitCommandError
-# from git.exc import InvalidGitRepositoryError
-# from git.exc import NoSuchPathError
-# from .. import bot
-# from userbot.utils import register
 import git
 import asyncio
 import random
@@ -25,7 +19,6 @@ import os
 import sys
 import asyncio
 
-# -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
     "sembra un file modificato {branch_name} "
     "viene usato:\n"
@@ -35,13 +28,13 @@ IS_SELECTED_DIFFERENT_BRANCH = (
 OFFICIAL_UPSTREAM_REPO = "https://github.com/Andry100009/AbradereUserbot"
 BOT_IS_UP_TO_DATE = "`Aggiornamento in corso.\nGrazie per aver utilizzato il servizio.`"
 NEW_BOT_UP_DATE_FOUND = (
-    "Nuovo aggiornamento {branch_name}\n"
-    "changelog: \n\n{changelog}\n"
-    "aggiornando  ..."
+    "⚙️Nuovo aggiornamento {branch_name}\n"
+    "⚙️modifiche: \n\n{changelog}\n"
+    "⚙️aggiornando  ..."
 )
 NEW_UP_DATE_FOUND = (
-    "new update found {branch_name}\n"
-    "`updating ...`"
+    "⚙️Nuovo aggiornamento trovato {branch_name}\n"
+    "⚙️`Aggiornamento ...`"
 )
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
@@ -87,7 +80,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit(f"{DEFAULTUSER} **Aggiornamento userbot...**")
+        await message.edit(f"⚙️**Aggiornamento AʙʀᴀᴅᴇʀᴇUsᴇʀʙᴏᴛ...**")
         await asyncio.sleep(8)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -155,7 +148,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit('**Aggiornamento in corso...\nAttendi 5 minuti ed esegui `.alive`**')
+    await message.edit('⚙️**Aggiornamento** in corso...\n⚙️Attendi 5 minuti e esegui **`.alive`**')
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)

@@ -26,11 +26,10 @@ HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 DELETE_TIMEOUT = 4
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Errore-No-Username"
 
-# Codice
 @bot.on(dev_cmd("update ?(.*)", outgoing=True))
 async def updater(upd):
     "Con il comando .update controlli se il bot è aggiornato"
-    await upd.edit('**Ricerca aggiornati in corso....**')
+    await upd.edit('⚙️**Ricerca aggiornati in corso....**')
 
     try:
         repo = git.Repo()
@@ -45,9 +44,9 @@ async def updater(upd):
     active_branch_name = repo.active_branch.name
     if active_branch_name != 'master':
         await upd.edit(
-            f'**[UPDATER]: Sembra che stai utilizzando un ramo custom** {active_branch_name}.'
+            f'**[UPDATER]: Sembra che stai utilizzando un file custom** {active_branch_name}.'
             '**in tal caso, Updater è in grado di identificare**'
-            '**quale ramo deve essere unito.**'
+            '**quale file deve essere unito.**'
             '**Per favore checkout a qualsiasi branch ufficiale**')
         repo.__del__()
         return
@@ -65,13 +64,13 @@ async def updater(upd):
 
     if not changelog:
         await upd.edit(
-            f'\nIl tuo Userbot è **AGGIORNATO**\n')
+            f'\n♨️ AʙʀᴀᴅᴇʀᴇUsᴇʀʙᴏᴛ è **AGGIORNATO**\n')
         repo.__del__()
         await asyncio.sleep(DELETE_TIMEOUT)
         await upd.delete()
         return
 
-    changelog_str = f'**Nuovo AGGIORNATO trovato** {DEFAULTUSER}\n\n**CHANGELOG:**\n {changelog}'
+    changelog_str = f'⚙️**Nuovo AGGIORNATO trovato** {DEFAULTUSER}\n\n⚙️**MODIFICHE:**\n {changelog}'
     if len(changelog_str) > 4095:
         await upd.edit('**Il changelog delle modifiche è troppo grande,leggi il file.**')
         file = open("change.txt", "w+")
@@ -100,7 +99,7 @@ async def updater(upd):
                     if app.name == Var.HEROKU_APP_NAME:
                         heroku_app = app
                 if heroku_app is None:
-                    await upd.edit('**Invalid APP Name. Inserisci il nome del bot nella Var `HEROKU_APP_NAME.**')
+                    await upd.edit('**Errore APP Name. Inserisci il nome del bot nella Var `HEROKU_APP_NAME.**')
                     return
                 heroku_git_url = heroku_app.git_url.replace(
                     "https://",
@@ -130,7 +129,7 @@ async def gen_chlog(repo, diff_marker):
     return ch_log
 
 async def deploy_start(bot, upd, refspec, remote):
-    await upd.edit('**Aggiornamento in corso...\nAttendi 5 minuti e esegui `.alive`**')
+    await upd.edit('⚙️**Aggiornamento** in corso...\n⚙️Attendi 5 minuti e esegui **`.alive`**')
     await remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
