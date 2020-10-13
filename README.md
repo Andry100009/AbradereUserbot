@@ -4,9 +4,6 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-green.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Made in Python](https://img.shields.io/badge/Made%20in-python-red.svg)](https://www.python.org/)
 
-
-<img src="https://www.linkpicture.com/q/download_59.png" alt="FRIDAY USERBOT">
-
 ## 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗭𝗜𝗢𝗡𝗘
 
 [![Installa Con Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
