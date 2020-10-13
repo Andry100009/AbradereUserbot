@@ -13,7 +13,7 @@ from platform import uname
 from userbot import ALIVE_NAME, bot, versions
 from userbot.system import dev_cmd
 
-currentversion = "1.0-Beta"
+currentversion = "Raspa"
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Errore-No-Username"
