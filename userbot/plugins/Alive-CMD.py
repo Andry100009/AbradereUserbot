@@ -13,7 +13,7 @@ from platform import uname
 from userbot import ALIVE_NAME, bot, versions
 from userbot.system import dev_cmd
 
-currentversion = "1.0-Beta"
+currentversion = "RaspaEdition"
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Errore-No-Username"
@@ -27,4 +27,4 @@ async def amireallyalive(alive):
                      f"↬ **ʋᥱɾ⳽ɩoᥒᥱ**: `{currentversion}`\n"
                      f"↬ **Ⳙ⳽ⲉⲅⲃⲟⲧ 𝖽ⲓ**: `{DEFAULTUSER}`\n\n"
                      f"↬ **𝙘𝙤𝙥𝙞𝙧𝙞𝙜𝙝𝙩 𝙗𝙮**  [Founder](http://t.me/TurboCompressore)\n"
-                     "↬ **ɢʀʊքքօ** [𝗟𝗘 🅱️𝗔𝗠🅱️𝗜𝗡𝗘 𝗗𝗜 𝗔𝗟𝗣𝗔𝗧𝗢𝗞🤡](http://t.me/lebambineditiktokredirect)\n")
+                     "↬ **ɢʀʊքքօ** [𝗟𝗘 🅱️𝗔𝗠🅱️𝗜𝗡𝗘 𝗗𝗜 𝗧𝗜𝗞𝗧𝗢𝗞🤡](http://t.me/lebambineditiktokredirect)\n")
